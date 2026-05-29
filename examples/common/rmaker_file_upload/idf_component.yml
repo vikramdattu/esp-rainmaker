@@ -1,0 +1,17 @@
+## IDF Component Manager Manifest File
+version: "1.0.0"
+description: RainMaker device file upload helper — requests a pre-signed S3 URL via the esp-command-response protocol, uploads bytes, and confirms so the cloud writes the file_details row.
+url: https://github.com/espressif/esp-rainmaker/tree/master/examples/common/rmaker_file_upload
+repository: https://github.com/espressif/esp-rainmaker.git
+issues: https://github.com/espressif/esp-rainmaker/issues
+documentation: https://github.com/espressif/esp-rainmaker/tree/master/examples/common/rmaker_file_upload/README.md
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=5.1.0"
+  espressif/esp_rainmaker:
+    version: ">=1.0"
+  espressif/rmaker_common:
+    version: ">=1.4.0"
+  espressif/json_parser:
+    version: "~1.0.3"
